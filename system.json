@@ -1,0 +1,22 @@
+{
+	"id": "opd20",
+	"title": "BKG's One Piece D20",
+	"description": "A Foundry VTT System for BadKarmaGames' One Piece D20",
+	"version": "0.1",
+	"minimumCoreVersion": "9.238",
+	"compatibleCoreVersion": "9.276",
+	"author": "Sylphir-",
+	"authors": [
+		{
+			"name": "Sylphir-",
+			"url": "https://github.com/Sylphir-/",
+			"email": "rodrigo.capociama@gmail.com",
+			"discord": "Ins4n1ty_#1276"
+		}
+	],
+	"scripts": [
+		"script/system-script.js"
+	],
+	"esmodules": [
+		"script/system-module.mjs"]
+}

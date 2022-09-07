@@ -5,7 +5,6 @@
 	"version": "0.1",
 	"minimumCoreVersion": "9",
 	"compatibleCoreVersion": "9",
-	"author": "Sylphir-",
 	"authors": [
 		{
 			"name": "Sylphir-",
@@ -17,12 +16,7 @@
 	"scripts": [],
 	"esmodules": [],
 	"styles": [
-		{
-			"name": "items",
-			"label": "Items",
-			"path": "pack/items.db",
-			"type": "Item"
-		}
+		"css/system-styles.css"
 	],
 	"languages": [
 		{
@@ -38,5 +32,5 @@
 	"primaryTokenAttribute": "data.hp",
 	"url": "https://github.com/Sylphir-/opd20",
 	"manifest": "https://raw.githubusercontent.com/Sylphir-/opd20/main/system.json",
-	"download": "https://github.com/Sylphir-/opd20/blob/main/archive.zip"
+	"download": "https://github.com/Sylphir-/opd20/raw/main/opd20.zip"
 }

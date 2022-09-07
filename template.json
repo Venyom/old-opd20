@@ -1,0 +1,262 @@
+{
+	"Actor": {
+		"types": ["PC", "NPC", "Ship"],
+		"templates": {
+			"background": {
+				"age": "",
+				"gender": "",
+				"island": "",
+				"faction": "",
+				"biography": "",
+				"alignment": "",
+				"skinColor": "",
+				"eyeColor": "",
+				"hairColor": ""
+			},
+			"data": {
+				"name": "",
+				"race": "",
+				"class": "",
+				"career": "",
+				"size": "",
+				"fruit": "",
+				"height": 0,
+				"weight": 0,
+				"space": 5,
+				"reach": 5,
+				"fame": 0,
+				"speed": {
+					"land": 0,
+					"water": 0,
+					"air": 0
+				},
+				"attributes": {
+					"str": {
+						"value": 8,
+						"bonus": {
+							"race": 0,
+							"other": [0]
+						}
+					},
+					"con": {
+						"value": 8,
+						"bonus": {
+							"race": 0,
+							"other": [0]
+						}
+					},
+					"dex": {
+						"value": 8,
+						"bonus": {
+							"race": 0,
+							"other": [0]
+						}
+					},
+					"int": {
+						"value": 8,
+						"bonus": {
+							"race": 0,
+							"other": [0]
+						}
+					},
+					"wis": {
+						"value": 8,
+						"bonus": {
+							"race": 0,
+							"other": [0]
+						}
+					},
+					"cha": {
+						"value": 8,
+						"bonus": {
+							"race": 0,
+							"other": [0]
+						}
+					}
+				},
+				"resistances": {
+					"corrosive": 0,
+					"cold": 0,
+					"electric": 0,
+					"energy": 0,
+					"heat": 0,
+					"sonic": 0
+				},
+				"bonuses": {
+					"atk": {
+						"race": 0,
+						"other": [0]
+					},
+					"def": {
+						"race": 0,
+						"other": [0]
+					}
+				},
+				"level": 0,
+				"hp": 0,
+				"dr": 1,
+				"skills": {
+					"primary": {
+						"watk": {
+							"label": "Weapon Attack",
+							"rank": 0,
+							"category": "",
+							"attribute": {
+								"primary": "str",
+								"secondary": "dex"
+							},
+							"favored": 0
+						},
+						"uatk": {
+							"label": "Unarmed Attack",
+							"rank": 0,
+							"attribute": {
+								"primary": "str",
+								"secondary": "dex"
+							},
+							"favored": 0
+						},
+						"ratk": {
+							"label": "Ranged Attack",
+							"rank": 0,
+							"category": "",
+							"attribute": {
+								"primary": "dex",
+								"secondary": "wis"
+							},
+							"favored": 0
+						},
+						"def": {
+							"label": "Defense",
+							"rank": 0,
+							"attribute": {
+								"primary": "dex",
+								"secondary": "int"
+							}
+						},
+						"initiative": {
+							"label": "Initiative",
+							"rank": 0,
+							"attribute": {
+								"primary": "dex",
+								"secondary": "int"
+							},
+							"favored": 0
+						},
+						"fsave": {
+							"label": "Fortitude Save",
+							"rank": 0,
+							"attribute": {
+								"primary": "con",
+								"secondary": ""
+							},
+							"favored": 0
+						},
+						"rsave": {
+							"label": "Reflex Save",
+							"rank": 0,
+							"attribute": {
+								"primary": "dex",
+								"secondary": ""
+							},
+							"favored": 0
+						},
+						"wsave": {
+							"label": "Will Save",
+							"rank": 0,
+							"attribute": {
+								"primary": "wis",
+								"secondary": ""
+							},
+							"favored": 0
+						}
+					},
+					"secondary": []
+				},
+				"feats": [],
+				"disadvantages": []
+			},
+			"inventory": {
+				"items": [],
+				"capacity": 1,
+				"currency": 0
+			},
+			"awards": {
+				"xp": 0,
+				"currency": 0
+			}
+		},
+		"npcData":{
+			"name": "",
+			"level": 1,
+			"hp": 0,
+			"dr": 1,
+			"attributes": {
+				"str": 8,
+				"dex": 8,
+				"con": 8,
+				"int": 8,
+				"wis": 8,
+				"cha": 8
+			},
+			"dmg": "1d4",
+			"abilities": [],
+			"skills": []
+		},
+		"shipData":{},
+
+		"PC": {
+			"templates": ["background", "data", "inventory"]
+		},
+		"NPC": {
+			"templates": ["npcData", "awards", "inventory"]
+		},
+		"Ship": {
+			"templates": ["shipData"]
+		}
+	},
+	"Item": {
+		"types": ["weapon", "armor", "item", "fruit", "skill", "feat"],
+		"templates": {
+			"rarity": {
+				"rarity": "Common",
+				"price": 20
+			}
+		},
+		"weapon": {
+			"name": "",
+			"category": "",
+			"type": "",
+			"description": "",
+			"dmg": "1d4",
+			"critDmg": "x2",
+			"critRng": "20",
+			"melee": 5,
+			"range": 0,
+			"reqStr": 0,
+			"templates": ["rarity"],
+			"damage": 5,
+			"reload": 0
+		},
+		"item": {
+			"name": "",
+			"description": ""
+		},
+		"armor": {
+			"name": "",
+			"type": "",
+			"defBonus": 0,
+			"dexBonus": 0,
+			"armPenalty": 0,
+			"speedPenalty": 0,
+			"resistances": {
+				"corrosive": 0,
+				"cold": 0,
+				"electric": 0,
+				"energy": 0,
+				"heat": 0,
+				"sonic": 0
+			}
+		}
+	}
+}

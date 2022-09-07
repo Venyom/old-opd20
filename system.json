@@ -18,5 +18,30 @@
 		"script/system-script.js"
 	],
 	"esmodules": [
-		"script/system-module.mjs"]
+		"script/system-module.mjs"
+	],
+	"styles": [
+		{
+			"name": "items",
+			"label": "Items",
+			"path": "pack/items.db",
+			"type": "Item"
+		}
+	],
+	"languages": [
+		{
+			"lang": "en",
+			"name": "English",
+			"path": "lang/en.json"
+		}
+	],
+	"socket": false,
+	"initiative": "1d20",
+	"gridDistance": 5,
+	"gridUnits": "ft",
+	"primaryTokenAttribute": "resources.health",
+	"secondaryTokenAttribute": "resources.power",
+	"url": "https://github.com/Sylphir-/opd20",
+	"manifest": "https://github.com/Sylphir-/opd20/system.json",
+	"download": "https://github.com/Sylphir-/opd20/archive.zip"
 }

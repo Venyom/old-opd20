@@ -6,14 +6,14 @@
 	"minimumCoreVersion": "9",
 	"compatibleCoreVersion": "9",
 	"author": "Sylphir-",
-	"authors": [
+	/*"authors": [
 		{
 			"name": "Sylphir-",
 			"url": "https://github.com/Sylphir-/",
 			"email": "rodrigo.capociama@gmail.com",
 			"discord": "Ins4n1ty_#1276"
 		}
-	],
+	],*/
 	"scripts": [],
 	"esmodules": [],
 	"styles": [

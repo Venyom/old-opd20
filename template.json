@@ -217,12 +217,6 @@
 	},
 	"Item": {
 		"types": ["weapon", "armor", "item", "fruit", "skill", "feat"],
-		"templates": {
-			"rarity": {
-				"rarity": "Common",
-				"price": 20
-			}
-		},
 		"weapon": {
 			"name": "",
 			"category": "",
@@ -234,9 +228,10 @@
 			"melee": 5,
 			"range": 0,
 			"reqStr": 0,
-			"templates": ["rarity"],
+			"price": 0,
 			"damage": 5,
-			"reload": 0
+			"reload": 0,
+			"dial": {}
 		},
 		"item": {
 			"name": "",
@@ -257,6 +252,27 @@
 				"heat": 0,
 				"sonic": 0
 			}
+		},
+		"fruit": {
+			"name": "",
+			"type": "",
+			"description": "",
+			"feats": []
+		},
+		"skill": {
+			"name": "",
+			"rank": 0,
+			"favored": 0,
+			"attribute": {
+				"primary": "",
+				"secondary": ""
+			}
+		},
+		"feat": {
+			"name": "",
+			"type": "",
+			"req": [],
+			"description": ""
 		}
 	}
 }

@@ -198,12 +198,12 @@
 			"hp": 0,
 			"dr": 1,
 			"attributes": {
-				"str": 8,
-				"dex": 8,
-				"con": 8,
-				"int": 8,
-				"wis": 8,
-				"cha": 8
+				"str": {"value": 8, "mod": 0},
+				"dex": {"value": 8, "mod": 0},
+				"con": {"value": 8, "mod": 0},
+				"int": {"value": 8, "mod": 0},
+				"wis": {"value": 8, "mod": 0},
+				"cha": {"value": 8, "mod": 0}
 			},
 			"dmg": "1d4",
 			"abilities": [],

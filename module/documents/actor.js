@@ -34,7 +34,7 @@ export class OPActor extends Actor{
 	 * Prepare Character type specific data
 	 */
 	_prepareCharacterData(actorData){
-		if( actorData.type != "PC" ) return;
+		if( actorData.type !== "PC" ) return;
 
 		const data = actorData.data;
 
@@ -47,7 +47,7 @@ export class OPActor extends Actor{
 	 * Prepare NPC data
 	 */
 	_prepareNpcData(actorData){
-		if( actorData.type != "NPC" ) return;
+		if( actorData.type !== "NPC" ) return;
 
 		const data = actorData.data;
 	}
@@ -56,8 +56,49 @@ export class OPActor extends Actor{
 	 * Prepare Ship data
 	 */
 	_prepareNpcData(actorData){
-		if( actorData.type != "Ship" ) return;
+		if( actorData.type !== "Ship" ) return;
 
 		const data = actorData.data;
+	}
+
+
+	/**
+	 * Override getRollData
+	 */
+	getRollData(){
+		const data = super.getRollData();
+
+		this._getCharacterRollData(data);
+		this._getNpcRollData(data);
+
+		return data;
+	}
+
+	/**
+	 * Prepare character roll data
+	 */
+	_getCharacterRollData(data){
+		if( this.data.type !== "PC" ) return;
+
+		// Translates @data.attributes.str to @str
+		if( data.attributes ){
+			for( let [k,v] of Object.entries(data.attributes)) {
+				data[k] = foundry.utils.deepClone(v);
+			}
+		}
+	}
+
+	/**
+	 *	Prepare NPC roll data
+	 */
+	_getNpcRollData(data){
+		if( this.data.type !=== "NPC" ) return;
+
+		// Translates @data.attributes.* to @*
+		if( data.attributes ){
+			for( let [k,v] of Object.entries(data.attributes)) {
+				data[k] = foundry.utils.deepClone(v);
+			}
+		}
 	}
 }

@@ -36,42 +36,48 @@
 						"bonus": {
 							"race": 0,
 							"other": [0]
-						}
+						},
+						"mod": 0
 					},
 					"con": {
 						"value": 8,
 						"bonus": {
 							"race": 0,
 							"other": [0]
-						}
+						},
+						"mod": 0
 					},
 					"dex": {
 						"value": 8,
 						"bonus": {
 							"race": 0,
 							"other": [0]
-						}
+						},
+						"mod": 0
 					},
 					"int": {
 						"value": 8,
 						"bonus": {
 							"race": 0,
 							"other": [0]
-						}
+						},
+						"mod": 0
 					},
 					"wis": {
 						"value": 8,
 						"bonus": {
 							"race": 0,
 							"other": [0]
-						}
+						},
+						"mod": 0
 					},
 					"cha": {
 						"value": 8,
 						"bonus": {
 							"race": 0,
 							"other": [0]
-						}
+						},
+						"mod": 0
 					}
 				},
 				"resistances": {

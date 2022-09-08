@@ -7,10 +7,8 @@
 	"compatibleCoreVersion": "9.280",
 	"author": "Sylphir-",
 	"scripts": [],
-	"esmodules": [],
-	"styles": [
-		"css/system-styles.css"
-	],
+	"esmodules": ["module/main.mjs"],
+	"styles": ["css/system-styles.css"],
 	"languages": [
 		{
 			"lang": "en",

@@ -55,7 +55,7 @@ export class OPActor extends Actor{
 	/**
 	 * Prepare Ship data
 	 */
-	_prepareNpcData(actorData){
+	_prepareShipData(actorData){
 		if( actorData.type !== "Ship" ) return;
 
 		const data = actorData.data;
@@ -92,7 +92,7 @@ export class OPActor extends Actor{
 	 *	Prepare NPC roll data
 	 */
 	_getNpcRollData(data){
-		if( this.data.type !=== "NPC" ) return;
+		if( this.data.type !== "NPC" ) return;
 
 		// Translates @data.attributes.* to @*
 		if( data.attributes ){

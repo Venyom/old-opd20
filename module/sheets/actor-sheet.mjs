@@ -39,7 +39,20 @@ export class OPActorSheet extends ActorSheet {
 
     context.rollData = context.actor.getRollData();
 
-    context.effects = prepareActiveEffectCategories(this.actor.effects);
+    //context.effects = prepareActiveEffectCategories(this.actor.effects);
 
+    console.error("getData finished");
     return context;
   }
+
+  _prepareItems(context) {
+  }
+
+  _prepareNpcData(context){
+
+  }
+
+  _prepareCharacterData(context){
+
+  }
+}

@@ -4,8 +4,10 @@
 * @return {Promise}
 */
 export const preloadHandlebarsTemplates = async function() {
-	/*return loadTemplates([
+	return loadTemplates([
+		"systems/opd20/templates/actor/parts/actor-effects.html",
+		"systems/opd20/templates/actor/parts/actor-features.html",
 		"systems/opd20/templates/actor/parts/actor-items.html"
-	]);*/
+	]);
 	return loadTemplates([]);
 };
